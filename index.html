@@ -11,7 +11,7 @@
 <body>
     <div class="fundo">
         <div class="calculadora">
-            <h2>Calculadora</i></h2>
+            <h2 id="titulo">Calculadora</i></h2>
             <p id="resultado"></p>
                 <table>                 
                     <tr>
@@ -39,23 +39,21 @@
                         <td rowspan="2"><button class="botao" style="height: 106px;" onclick="calcular()">=</button></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><button class="botao" style="width: 106px;" onclick="insert('0')">0</button></td>
+                        <td colspan="2"><button class="botao" style="width: 110px;" onclick="insert('0')">0</button></td>
                         <td><button class="botao" onclick="insert('.')">.</button></td>
                     </tr>
                 </table>
+
         </div>
 
-        <div class="historico">
-            <table>
-                <tr>
-                  <th>Resultado</th>
-                </tr>
-                <tr>
-                  <td id="resutadoperacao"></td>
-                </tr>
- 
-              </table>
+        <div class="tabelaResultado">
+            <table id="registros">
+				<tr>
+					<td>Resultados</td>
+				</tr>
+			</table>
         </div>
+
     </div>
 </body>
 </html>

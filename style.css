@@ -1,45 +1,42 @@
 *{
-    margin: 0;
-    padding: 0;
+    padding: 0%;
+    margin: 0%;
 }
-
 .fundo{
     background: steelblue;
-    height: 100vh;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    display: flex;
 }
 
 .calculadora{
-    position: absolute;
-    background-color: black;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     border-radius: 10px;
-    padding: 15px;
+    width: 250px;
+    background-color: black;
+    margin: 20px;
+    border: none;
+    padding: 10px;
 }
+
 
 .botao{
     width: 50px;
     height: 50px;
     font-size: 25px;
     cursor: pointer;
-    margin: 3px;
+    margin: 0px;
     background-color: rgb(31, 31, 31);
     border: none;
     color: black;
     background-color: whitesmoke;
     border-radius: 10%;
+    margin: 5px;
+
 }
 
-.botao:hover{
-    background-color: steelblue;
-}
 
 #resultado{
-    width: 210px;
+    width: 230px;
     background-color: white;
     height: 30px;
     margin: 5px;
@@ -47,22 +44,18 @@
     color: black;
     text-align: right;
     padding: 5px;
+    border-radius: 8px;
 
 }
 
-.historico table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-.historico td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
+.tabelaResultado{
+    border-radius: 10px;
+    width: 250px;
+    background-color: azure;
     color: black;
-  }
-  
-.historico  tr:nth-child(even) {
-    background-color: #dddddd;
-  }
+    margin: 20px;
+    border: none;
+    padding: 10px;
+    
+}
+

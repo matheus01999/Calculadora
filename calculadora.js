@@ -1,53 +1,45 @@
-var historico = []
+//Operações
 
-function insert(num)
-{
+let resultado = document.getElementById('resultado').innerHTML;
+
+function insert(num){
     var numero = document.getElementById('resultado').innerHTML;
     document.getElementById('resultado').innerHTML = numero + num;
 }
 
-function clean()
-{
+function clean(){
     document.getElementById('resultado').innerHTML = "";
 }
 
-function back()
-{
+function back(){
     var resultado = document.getElementById('resultado').innerHTML;
     document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length -1);
 }
 
-function calcular()
-{
+
+// Calculando
+
+
+function calcular(){
     var resultado = document.getElementById('resultado').innerHTML;
-
-    if(resultado)
-    {
-        adiciona()
+    if(resultado){
         document.getElementById('resultado').innerHTML = eval(resultado);
-
+        operacao = resultado + " = " + eval(resultado)
+        var html = "<tr'>";
+	    html += "<td>" + resultado + " = " +eval(resultado) + "</td>";
+        html += "<hr/>"
+	    html += "</tr>";
+        document.getElementById("registros").innerHTML += html; 
+        clean()
         
 
     }
-    else
-    {
+    else{
         document.getElementById('resultado').innerHTML = "Nada..."
     }
-}
-
-function adiciona(){
-    var resultado = document.getElementById('resultado').innerHTML;
-    var solucao = resultado + " = " + eval(resultado)
-    historico.push(solucao)
-    listar()
-
 
 }
 
-function listar(){
-    for (var i = 0; i < historico.length; i++){
-        document.getElementById('resutadoperacao').innerHTML = historico[i]
-    }
-    
-}
+
+//Listando  Resultados 
 
