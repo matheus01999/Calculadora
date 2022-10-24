@@ -1,19 +1,19 @@
 //Operações
 
-let resultado = document.getElementById('resultado').innerHTML;
+let calculo = document.getElementById('calculo').innerHTML;
 
 function insert(num){
-    var numero = document.getElementById('resultado').innerHTML;
-    document.getElementById('resultado').innerHTML = numero + num;
+    var numero = document.getElementById('calculo').innerHTML;
+    document.getElementById('calculo').innerHTML = numero + num;
 }
 
 function clean(){
-    document.getElementById('resultado').innerHTML = "";
+    document.getElementById('calculo').innerHTML = "";
 }
 
 function back(){
-    var resultado = document.getElementById('resultado').innerHTML;
-    document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length -1);
+    var calculo = document.getElementById('calculo').innerHTML;
+    document.getElementById('calculo').innerHTML = calculo.substring(0, calculo.length -1);
 }
 
 
@@ -21,13 +21,12 @@ function back(){
 
 
 function calcular(){
-    var resultado = document.getElementById('resultado').innerHTML;
-    if(resultado){
-        document.getElementById('resultado').innerHTML = eval(resultado);
-        operacao = resultado + " = " + eval(resultado)
+    var calculo = document.getElementById('calculo').innerHTML;
+    if(calculo){
+        document.getElementById('calculo').innerHTML = eval(calculo);
+        operacao = calculo + " = " + eval(calculo)
         var html = "<tr'>";
-	    html += "<td>" + resultado + " = " +eval(resultado) + "</td>";
-        html += "<hr/>"
+	    html += "<td>" + calculo + " = " +eval(calculo) + "</td>";
 	    html += "</tr>";
         document.getElementById("registros").innerHTML += html; 
         clean()
@@ -35,7 +34,7 @@ function calcular(){
 
     }
     else{
-        document.getElementById('resultado').innerHTML = "Nada..."
+        document.getElementById('calculo').innerHTML = "Nada..."
     }
 
 }
