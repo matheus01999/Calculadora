@@ -27,6 +27,7 @@ function calcular(){
         operacao = calculo + " = " + eval(calculo)
         var html = "<tr'>";
 	    html += "<td>" + calculo + " = " +eval(calculo) + "</td>";
+        html += "<hr>";
 	    html += "</tr>";
         document.getElementById("registros").innerHTML += html; 
         clean()
