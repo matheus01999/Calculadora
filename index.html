@@ -9,9 +9,13 @@
     <script src="calculadora.js"></script>
 </head>
 <body>
-
-
+    <label class="switch">
+        <input type="checkbox" onclick="darkMode()">
+        <span class="slider round"></span>
+    </label>
+    <section>
     <main>
+        
         <section>
             <h1 id="titulo">Calculadora</i></h1>
             <div class="modelo">
@@ -51,15 +55,9 @@
             
         </section>
 
-        <section>
-            <h1 id="titulo">Resultados</h1>
-            <div class="historicoResultados">
-                <table id="registros">
-                    <tr>
-                        <td></td>
-                    </tr>
-                </table>
-            </div>
+        <section id="resultados">
+
+            
         </section>
     </main>
 </body>

@@ -21,16 +21,17 @@ function back(){
 
 
 function calcular(){
+    MostrarResultados()
     var calculo = document.getElementById('calculo').innerHTML;
     if(calculo){
         document.getElementById('calculo').innerHTML = eval(calculo);
-        operacao = calculo + " = " + eval(calculo)
-        var html = "<tr'>";
+        var html = "<tr>";
 	    html += "<td>" + calculo + " = " +eval(calculo) + "</td>";
         html += "<hr>";
 	    html += "</tr>";
-        document.getElementById("registros").innerHTML += html; 
+        document.getElementById("registros").innerHTML += html;
         clean()
+        
         
 
     }
@@ -41,5 +42,32 @@ function calcular(){
 }
 
 
-//Listando  Resultados 
+function darkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+
+  }
+
+
+function MostrarResultados(){
+    var validadorResultados = document.getElementById('registros')
+      if(validadorResultados){
+        
+    }
+    else{
+    var listaResultados = "<h1 id=titulo>Resultados</h1>"
+    listaResultados += "<div class=historicoResultados>"
+    listaResultados += "<table id=registros>"
+    listaResultados += "<tr>"
+    listaResultados += "<td></td>"
+    listaResultados += "</tr>"
+    listaResultados += "</table>"
+    listaResultados += "</div>"
+    document.getElementById('resultados').innerHTML += listaResultados
+        
+    }
+
+    
+    
+}
 

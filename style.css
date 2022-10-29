@@ -1,7 +1,6 @@
+/* HTML */
+
 main{
-    width: 100vw;
-    height: 100vh;
-    background: #222;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -10,15 +9,19 @@ main{
 
 section{
     margin: 10px;
-    color: azure;
+    color: #222;
 
     }
 
 body{
     margin: 0px;
+    background: azure;
+    transition: .6s;
 }
 
     
+
+/* APLICAÇÃO */
 
 
 #titulo{
@@ -26,33 +29,10 @@ body{
     padding-bottom: 5px;
 }
 
-.modelo{
-    padding: 10px;
-    border-radius: 2px;
-    height: 400px;
-    width: 200;
-    border: 1px solid azure;
-}
-
-.botao{
-    width: 50px;
-    height: 50px;
-    font-size: 25px;
-    cursor: pointer;
-    margin: 0px;
-    background-color: rgb(31, 31, 31);
-    border: none;
-    color: black;
-    background-color: whitesmoke;
-    margin: 5px;
-    border-radius: 2px;
-
-}
-
 
 #calculo{
     width: 240px;
-    background-color: white;
+    background-color: azure;
     height: 30px;
     margin: 5px;
     font-size: 25px;
@@ -60,6 +40,7 @@ body{
     text-align: right;
     padding: 5px;
     border-radius: 2px;
+    border: #222 1px solid;
 }
 
 
@@ -69,6 +50,122 @@ body{
     border-radius: 2px;
     height: 400px;
     width: 200;
-    border: 1px solid azure;
+    border: 1px solid #222;
    
 }
+
+.modelo{
+  padding: 10px;
+  border-radius: 2px;
+  height: 400px;
+  width: 200;
+  border: 1px solid #222;
+}
+
+.botao{
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  cursor: pointer;
+  margin: 0px;
+  background-color: rgb(31, 31, 31);
+  border: none;
+  color: black;
+  background-color: azure;
+  margin: 5px;
+  border-radius: 2px;
+  border: #222 1px solid;
+
+}
+
+
+/* DARK MODE */
+
+.dark-mode{
+  background: #222;
+}
+
+.dark-mode .modelo{
+  border: 1px azure solid;
+}
+
+.dark-mode .botao{
+  color: #222;
+
+}
+
+.dark-mode #titulo{
+  color: azure;
+}
+
+.dark-mode #calculo{
+  border: 1px solid #222;
+  color: #222;
+}
+
+.dark-mode .historicoResultados{
+  border: 1px solid azure;
+  color: azure;
+}
+
+/* BOTÃO DO DARKMODE */
+
+.switch {
+  position: relative;
+  width: 60px;
+  height: 34px;
+  float: right;
+  margin: 10px;
+  
+
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #222;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: steelblue;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: azure;
+}
+
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
