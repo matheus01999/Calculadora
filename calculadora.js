@@ -56,7 +56,7 @@ function MostrarResultados(){
     }
     else{
     var listaResultados = "<h1 id=titulo>Resultados</h1>"
-    listaResultados += "<div class=historicoResultados>"
+    listaResultados += "<div class=historicoResultados >"
     listaResultados += "<table id=registros>"
     listaResultados += "<tr>"
     listaResultados += "<td></td>"

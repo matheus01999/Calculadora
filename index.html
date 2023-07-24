@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,21 +9,16 @@
     <link rel="stylesheet" href="style.css">
     <script src="calculadora.js"></script>
 </head>
+
 <body>
-    <label class="switch">
-        <input type="checkbox" onclick="darkMode()">
-        <span class="slider round"></span>
-    </label>
-    <section>
     <main>
-        
         <section>
-            <h1 id="titulo">Calculadora</i></h1>
+            <h1 id="titulo">CALCULADORA</i></h1>
             <div class="modelo">
-                <p id="calculo"></p>
+                <p id="calculo" class="tela"></p>
                     <table>                 
                         <tr>
-                            <td><button class="botao" onclick="clean()">C</td>
+                            <td><button class="botao" onclick="clean()">c</td>
                             <td><button class="botao" onclick="back()"><img src="./icons/apagar.png" alt="" srcset=""></td>
                             <td><button class="botao" onclick="insert('/')">/</button></td>
                             <td><button class="botao" onclick="insert('*')">*</button></td>
@@ -50,14 +46,9 @@
                             <td><button class="botao" onclick="insert('.')">.</button></td>
                         </tr>
                     </table>
-    
             </div>
-            
         </section>
-
-        <section id="resultados">
-
-            
+        <section id="resultados" class="resultados">
         </section>
     </main>
 </body>
