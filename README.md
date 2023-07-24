@@ -1,6 +1,8 @@
 
 # Calc Web
-![image](https://user-images.githubusercontent.com/50186745/196573978-24dec9a7-2966-4e46-9d31-d10fe14c879b.png)
+
+![image](https://github.com/matheus01999/Calculadora/assets/50186745/03fc9e01-fa8c-4920-97e4-82434025b3da)
+
 
 Calculadora simples realiza operações de divisão, multiplicação, soma e subtração feita com javascript, css e html que enquanto a pagina não foi recarregada mostra os ultimos resultados 
 
