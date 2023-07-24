@@ -1,5 +1,5 @@
 
-# Calc Web
+# Calculadora
 
 ![image](https://github.com/matheus01999/Calculadora/assets/50186745/5d212259-37c8-4e76-891c-cd7493de0d97)
 
